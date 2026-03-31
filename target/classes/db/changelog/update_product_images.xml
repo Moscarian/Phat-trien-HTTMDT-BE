@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!-- ============================================================
+         Changeset: Cập nhật hình ảnh sản phẩm giày đúng với tên
+         Nguồn ảnh: Unsplash (CDN công khai, không bị block hotlink)
+         Author   : antigravity
+         Date     : 2026-03-26
+    ============================================================ -->
+
+    <!-- id=1: Nike Air Max - Sneakers đỏ/trắng nổi bật của Nike -->
+    <changeSet id="update-product-images-001-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 1</where>
+        </update>
+    </changeSet>
+
+    <!-- id=2: Adidas Ultraboost - Giày chạy bộ trắng Adidas -->
+    <changeSet id="update-product-images-002-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 2</where>
+        </update>
+    </changeSet>
+
+    <!-- id=3: Puma Suede Classic - Sneaker cổ điển Puma -->
+    <changeSet id="update-product-images-003-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 3</where>
+        </update>
+    </changeSet>
+
+    <!-- id=4: Converse Chuck Taylor - Sneaker vải cổ điển -->
+    <changeSet id="update-product-images-004-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1494496195158-c3becb4f2475?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 4</where>
+        </update>
+    </changeSet>
+
+    <!-- id=5: Vans Old Skool - Giày skate đen trắng -->
+    <changeSet id="update-product-images-005-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 5</where>
+        </update>
+    </changeSet>
+
+    <!-- id=6: Reebok Classic Leather - Giày da trắng cổ điển -->
+    <changeSet id="update-product-images-006-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 6</where>
+        </update>
+    </changeSet>
+
+    <!-- id=7: New Balance 574 - Sneaker retro New Balance -->
+    <changeSet id="update-product-images-007-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 7</where>
+        </update>
+    </changeSet>
+
+    <!-- id=8: Asics Gel-Kayano - Giày chạy bộ cao cấp -->
+    <changeSet id="update-product-images-008-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 8</where>
+        </update>
+    </changeSet>
+
+    <!-- id=9: Fila Disruptor - Chunky sneaker đế dày -->
+    <changeSet id="update-product-images-009-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 9</where>
+        </update>
+    </changeSet>
+
+    <!-- id=10: Under Armour Charged - Giày chạy bộ thể thao -->
+    <changeSet id="update-product-images-010-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 10</where>
+        </update>
+    </changeSet>
+
+    <!-- id=11: Jordan 1 Retro High - High-top Jordan màu đỏ đen -->
+    <changeSet id="update-product-images-011-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1556906781-9a412961a28c?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 11</where>
+        </update>
+    </changeSet>
+
+    <!-- id=12: Nike Blazer Mid - Giày mid-top Nike cổ điển -->
+    <changeSet id="update-product-images-012-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 12</where>
+        </update>
+    </changeSet>
+
+    <!-- id=13: Skechers D'Lites - Giày chunky đế dày nhẹ -->
+    <changeSet id="update-product-images-013-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 13</where>
+        </update>
+    </changeSet>
+
+    <!-- id=14: Timberland 6-Inch Boots - Boot da vàng cổ cao -->
+    <changeSet id="update-product-images-014-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 14</where>
+        </update>
+    </changeSet>
+
+    <!-- id=15: Merrell Moab 2 - Giày leo núi dã ngoại -->
+    <changeSet id="update-product-images-015-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1512735543049-d0de89cf46c4?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 15</where>
+        </update>
+    </changeSet>
+
+    <!-- id=16: Nike Air Force 1 - AF1 trắng tinh iconic -->
+    <changeSet id="update-product-images-016-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 16</where>
+        </update>
+    </changeSet>
+
+    <!-- id=17: Adidas NMD R1 - Sneaker boost hiện đại Adidas -->
+    <changeSet id="update-product-images-017-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 17</where>
+        </update>
+    </changeSet>
+
+    <!-- id=18: Puma RS-X - Chunky retro runner Puma nhiều màu -->
+    <changeSet id="update-product-images-018-v2" author="antigravity">
+        <update tableName="product">
+            <column name="image" value="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=600&amp;h=600&amp;fit=crop&amp;q=80"/>
+            <where>id = 18</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>

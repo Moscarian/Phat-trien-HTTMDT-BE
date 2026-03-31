@@ -1,0 +1,39 @@
+spring:
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/sneaker
+        username: root
+        password: 290324
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+    liquibase:
+        change-log: classpath:db/changelog/db.changelog-master.xml
+        enabled: true
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: thangdc29@gmail.com
+        password: scpnawwpjzpforxc
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+                        required: true
+                        trust: smtp.gmail.com
+                    debug: true
+
+server:
+    port: 8080
+
+mapstruct:
+    componentModel: spring
+
+jwt:
+    privateKey: Usak+zTFvZJH4j+5vtTleNnQRh1HvLsbBJuFKEK+REc=
+
+app:
+    frontend:
+        url: http://localhost:3000

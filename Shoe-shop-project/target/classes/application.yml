@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/sneaker
+        username: root
+        password: 290324
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: validate
+mapstruct:
+    componentModel: spring
+jwt:
+    privateKey: Usak+zTFvZJH4j+5vtTleNnQRh1HvLsbBJuFKEK+REc=
+
+cloudinary:
