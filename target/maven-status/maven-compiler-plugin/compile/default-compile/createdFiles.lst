@@ -80,6 +80,8 @@ com\btl\snaker\repository\ProductRepository.class
 com\btl\snaker\payload\request\AddSizeRequest.class
 com\btl\snaker\config\MailConfig.class
 com\btl\snaker\dto\CartFlatDTO.class
+com\btl\snaker\service\VNPayService.class
+com\btl\snaker\controller\PaymentController.class
 com\btl\snaker\repository\BrandRepository.class
 com\btl\snaker\service\OrderService.class
 com\btl\snaker\service\imp\ProductServiceImp.class

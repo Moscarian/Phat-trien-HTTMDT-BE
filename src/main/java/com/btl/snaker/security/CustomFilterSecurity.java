@@ -48,6 +48,7 @@ public class CustomFilterSecurity {
                         "/api/signin",
                         "/api/signup",
                         "/chatbot/message",
+                        "/payment/**",
                         "/error"
                 ).permitAll()
                 .requestMatchers(
