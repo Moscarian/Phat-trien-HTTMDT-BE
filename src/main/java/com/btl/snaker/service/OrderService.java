@@ -34,6 +34,9 @@ public class OrderService implements OrderServiceImp {
     @Autowired
     private ProductSizeRepository productSizeRepository;
 
+    @Autowired
+    private VoucherRepository voucherRepository;
+
     @Override
     public ResponseData getAllOrders() {
         ResponseData responseData = new ResponseData();
@@ -177,6 +180,27 @@ public class OrderService implements OrderServiceImp {
             order.setNote(orderRequest.getNote());
             order.setTotalAmount(totalAmount);
             order.setCreatedAt(new Date());
+
+            // Áp dụng voucher nếu có
+            if (orderRequest.getVoucherId() != null) {
+                Voucher voucher = voucherRepository.findById(orderRequest.getVoucherId()).orElse(null);
+                if (voucher != null && voucher.getActive()) {
+                    long discount = 0;
+                    if ("PERCENT".equals(voucher.getDiscountType())) {
+                        discount = totalAmount * voucher.getDiscountValue() / 100;
+                        if (voucher.getMaxDiscount() != null && discount > voucher.getMaxDiscount()) {
+                            discount = voucher.getMaxDiscount();
+                        }
+                    } else {
+                        discount = voucher.getDiscountValue();
+                    }
+                    totalAmount = Math.max(0, totalAmount - discount);
+                    order.setTotalAmount(totalAmount);
+                    // Tăng số lượt đã dùng
+                    voucher.setUsedCount(voucher.getUsedCount() + 1);
+                    voucherRepository.save(voucher);
+                }
+            }
 
             Order savedOrder = orderRepository.save(order);
 

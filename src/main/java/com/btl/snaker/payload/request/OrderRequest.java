@@ -11,6 +11,7 @@ public class OrderRequest {
     private String shippingMethod;
     private String deliveryTime;
     private String note;
+    private Long voucherId;
     private List<OrderItemRequest> orderItemRequests;
 
     public long getUserId() {
@@ -69,19 +70,10 @@ public class OrderRequest {
         this.deliveryTime = deliveryTime;
     }
 
-    public String getNote() {
-        return note;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
-    }
-
-    public List<OrderItemRequest> getOrderItemRequests() {
-        return orderItemRequests;
-    }
-
-    public void setOrderItemRequests(List<OrderItemRequest> orderItemRequests) {
-        this.orderItemRequests = orderItemRequests;
-    }
+    public String getNote() { return note; }
+    public void setNote(String note) { this.note = note; }
+    public Long getVoucherId() { return voucherId; }
+    public void setVoucherId(Long voucherId) { this.voucherId = voucherId; }
+    public List<OrderItemRequest> getOrderItemRequests() { return orderItemRequests; }
+    public void setOrderItemRequests(List<OrderItemRequest> orderItemRequests) { this.orderItemRequests = orderItemRequests; }
 }

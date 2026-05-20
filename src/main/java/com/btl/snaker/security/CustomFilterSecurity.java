@@ -52,6 +52,7 @@ public class CustomFilterSecurity {
                         "/chatbot/message",
                         "/payment/**",
                         "/return-request/user/**",
+                        "/voucher/user/**",
                         "/error"
                 ).permitAll()
                 .requestMatchers(

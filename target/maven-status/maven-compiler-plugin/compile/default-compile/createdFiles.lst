@@ -1,4 +1,5 @@
 com\btl\snaker\service\ProductService.class
+com\btl\snaker\entity\Voucher.class
 com\btl\snaker\service\imp\FileServiceImp.class
 com\btl\snaker\service\ContactService.class
 com\btl\snaker\repository\OrderRepository.class
@@ -46,6 +47,8 @@ com\btl\snaker\dto\CartFlatDTO.class
 com\btl\snaker\controller\PaymentController.class
 com\btl\snaker\repository\BrandRepository.class
 com\btl\snaker\entity\CartItem.class
+com\btl\snaker\repository\VoucherRepository.class
+com\btl\snaker\controller\VoucherController.class
 com\btl\snaker\dto\OrderFlatDTO.class
 com\btl\snaker\dto\UserDTO.class
 com\btl\snaker\entity\User.class

@@ -38,3 +38,6 @@ jwt:
 app:
     frontend:
         url: http://localhost:3000
+
+gemini:
+    api-key: AIzaSyCa5ojMsJRjSORD7hTZ-8EwIGXDtDxZIHg
